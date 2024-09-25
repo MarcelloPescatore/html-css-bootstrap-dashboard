@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS v5.3.2 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./img/duck.png" alt="logo dashboard" width="50" height="50">
+                  </a>
+                  <!-- /logo -->
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- /hamburger_button -->
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Nuovo Libro</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Catalogo Libri</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="#">Storico Prestiti</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                    </ul>
+                    <!-- /content_bar -->
+
+                    <form class="d-flex" role="search" data-bs-theme="light">
+                      <input class="form-control me-2 bg-white" type="search" placeholder="Cerca..." aria-label="Search" >
+                      <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                    <!-- /search_bar -->
+                  </div>
+                  <!-- /content_navbar -->
+                </div>
+            </nav>
+            <!-- /navbar -->
+        </header>
+        <!-- /header -->
+
+        <main>
+            <div class="container my-5">
+              <div class="row my-4">
+                <h1>Nuovo Libro</h1>
+              </div>
+              <!-- /title -->
+
+              <div class="row">
+                <div class="d-flex flex-wrap">
+                  <div class="mb-3 col-12 col-sm-6 pe-sm-4">
+                    <label for="name_form" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="name_form" placeholder="Inserisci il nome dell'autore">
+                  </div>
+                  <!-- /name -->
+                  <div class="mb-3 col-12 col-sm-6">
+                    <label for="surname_form" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" id="surname_form" placeholder="Inserisci il cognome dell'autore">
+                  </div>
+                  <!-- /surname -->
+                  <div class="mb-3 col-12">
+                    <label for="titlebook_form" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="titlebook_form" placeholder="Inserisci il titolo del libro">
+                    <span class="">Titolo versione italiana</span>
+                  </div>
+                  <!-- /title book -->
+                </div>
+
+                <div class="d-flex flex-wrap">
+                  <div class="mb-3 col-12 col-md-4 pe-md-4 ">
+                    <label class="pb-2" for="gender_form">Genere</label>
+                    <select class="form-select form-select-sm" id="gender_form">
+                      <option selected>Scegli il genere</option>
+                      <option value="1">Fantasy</option>
+                      <option value="2">Giallo</option>
+                      <option value="3">Romanzo</option>
+                    </select>
+                  </div>
+                  <!-- /gender -->
+                  <div class="mb-3 col-12 col-md-4 pe-md-4">
+                    <label for="datebook_form" class="form-label">Anno di pubblicazione</label>
+                    <input type="text" class="form-control" id="datebook_form" placeholder="Inserisci l'anno">
+                  </div>
+                  <!-- /date book -->
+                  <div class="mb-3 col-12 col-md-4 pe-md-4">
+                    <label for="isbn_form" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="isbn_form" placeholder="Inserisci il codice ISBN#">
+                  </div>
+                  <!-- /Isbn book -->
+                </div>
+                <!-- /author data -->
+                <hr>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <!-- note -->
+
+                <div class="form-check px-1">
+                  <input class="form-check-input ms-2 me-4" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Disponibile anche in digitale
+                  </label>
+                </div>
+
+                <div class="py-4">
+                  <a href="#">
+                      <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                  </a>
+              </div>
+              <!-- /btn_add_book -->
+
+              </div>
+            </div>
+        </main>
+        <!-- /main -->
+
+        <footer class="bg-dark py-4">
+            <div class="container py-2 text-center">
+                <h5 class="text-white m-0">
+                    © 2024 Boolean | All Rigths Reserved
+                </h5>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
